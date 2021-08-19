@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".baseView.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Day1.MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/activity_viewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioGroup
+            android:layout_alignParentBottom="true"
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FDFDFD">
+
+            <RadioButton
+                android:drawableTop="@drawable/home_selector"
+                android:text="首页"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/radio_button_home" />
+
+            <RadioButton
+                android:drawableTop="@drawable/focus_selector"
+                android:text="关注"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/radio_button_focus" />
+
+            <RadioButton
+                android:drawableTop="@drawable/chat_selector"
+                android:text="聊天"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/radio_button_chat" />
+
+            <RadioButton
+                android:drawableTop="@drawable/me_selector"
+                android:text="个人"
+                android:button="@null"
+                style="@style/CustomRadioBtn"
+                android:id="@+id/radio_button_me" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
